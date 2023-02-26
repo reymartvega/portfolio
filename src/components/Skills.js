@@ -1,23 +1,5 @@
 import { Tab,Nav } from "react-bootstrap";
 export const Skills = () => {
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
   const frontend=[
     {
       technology: "HTML",
@@ -126,9 +108,9 @@ export const Skills = () => {
                                 <Tab.Pane eventKey="second">
                                 <div className="skills-tab row">
                                     {
-                                    backend.map(items =>{
+                                    backend.map((items,index) =>{
                                       return(
-                                        <div key={items.index} className='col-sm-12 col-md-4'>
+                                        <div key={index} className='col-sm-12 col-md-4'>
                                           <h4>{items.technology}</h4>
                                           <p>{items.experience}</p>
                                         </div>
@@ -140,9 +122,9 @@ export const Skills = () => {
                                 <Tab.Pane eventKey="third">
                                 <div className="skills-tab row">
                                     {
-                                    tools.map(items =>{
+                                    tools.map((items,index) =>{
                                       return(
-                                        <div key={items.index} className='col-sm-12 col-md-4'>
+                                        <div key={index} className='col-sm-12 col-md-4'>
                                           <h4>{items.technology}</h4>
                                           <p>{items.experience}</p>
                                         </div>
