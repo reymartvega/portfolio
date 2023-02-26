@@ -11,15 +11,13 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [ "Vega", "Full Stack Developer"];
   const period = 2000;
-
+  
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
-    }, [delta]);
-
-  return () => { clearInterval(ticker) };
+      }, [delta]);
+    return () => { clearInterval(ticker) };
   }, [text])
-
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
