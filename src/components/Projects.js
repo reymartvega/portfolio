@@ -14,8 +14,8 @@ export const Projects = () => {
       title: "Personal Portfolio",
       description: "Created using React and Bootstrap",
       imgUrl: projImg1,
-      live:"http://localhost:3000/",
-      source:''
+      live:"https://adorable-crisp-56f774.netlify.app",
+      source:'https://github.com/reymartvega/portfolio'
     },
     {
       title: "ShutInPh",
