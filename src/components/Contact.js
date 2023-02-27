@@ -10,7 +10,7 @@ export const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_nnnktd4', 'template_ma7o893', form.current, 'vq1cTvxBZnZNmXp0b')
+    emailjs.sendForm(process.env.SERVICE_ID,process.env.TEMPLATE_ID, form.current,process.env.PUBLIC_KEY)
       .then((result) => {
           e.target.reset();
           Swal.fire({
