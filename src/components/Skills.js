@@ -22,8 +22,8 @@ export const Skills = () => {
       experience : "Intermediate"
     },
     {
-      technology: "Tailwindcss",
-      experience : "Beginner"
+      technology: "MaterialUI",
+      experience : "Intermediate"
     }
   ]
   const backend =[
